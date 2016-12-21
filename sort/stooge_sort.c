@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+#define MAX_SIZE 1024000
+
 void swap(int *i, int *j) {
     register int temp = *i;
     *i = *j;
@@ -19,20 +22,17 @@ void stooge_sort(int *array, int i, int length) {
 }
 
 int main(void) {
-    int *arr = (int *)malloc(sizeof(int)*12);
+    int *arr = (int *)malloc(sizeof(int)* MAX_SIZE );
     int i;
     printf("\n-=-=-=-=-=-=-=-=-=-\n");
-    for(i = 0; i < 12; i++) {
+    for(i = 0; i < MAX_SIZE ; i++) {
         arr[i] = rand();
         printf("%d\n", arr[i]);
     }
     printf("\n-=-=-=-=-=-=-=-=-=-\n");
     int temp;
-    stooge_sort(arr, 0, 12);
-    for(i; i >= 0; i--) {
+    stooge_sort(arr, 0, MAX_SIZE );
+    for(i; i > 0; i--) {
         printf("%d\n", arr[i]);
     }
     printf("\n-=-=-=-=-=-=-=-=-=-\n");
-}
-
-
