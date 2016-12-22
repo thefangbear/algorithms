@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX_SIZE 10240000
+#define MAX_SIZE 1024000
 
 int comp (const void * elem1, const void * elem2)  {
     int f = *((int*)elem1);
