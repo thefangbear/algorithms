@@ -10,7 +10,7 @@ void swap(int *i, int *j) {
 }
 
 void stooge_sort(int *array, int i, int length) {
-    length = length--;
+    length--;
 
     if(array[length] < array[i]) swap(&array[i], &array[length]);
     if(length - i + 1 > 2) {
