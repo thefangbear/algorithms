@@ -1,5 +1,6 @@
 /*
  Optimized 3-Gram printer using a linear-time one-pass constant memory strategy
+ Copyright (c) 2017 R.-J. Fang
  Algorithmic complexity:
   Time complexity: O(3n)
   Memory complexity: O(1)
